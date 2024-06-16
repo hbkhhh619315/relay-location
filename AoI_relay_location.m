@@ -1,7 +1,7 @@
 %GUI
 function GUI()
 
-W=inputdlg({'The length of data packet','The number of data packets','The bandwidth in communication','The wavelength in communication','The distance between the nodes','The transmitted signal power of node','The transmitted signal power of relay'},'Set of input parameters',1,{'800000','100','20000000','0.125','500','0.05','0.5'});
+W=inputdlg({'The length of data packet','The number of data packets','The bandwidth in communication','The wavelength in communication','The distance between the nodes','The transmitted signal power of node','The transmitted signal power of relay'},'Set of input parameters',1,{'800000','100','20000000','0.125','1000','0.2','1'});
 L=str2double(W{1});%bit
 S=str2double(W{2});%
 B=str2double(W{3});%Hz
@@ -64,10 +64,10 @@ ylabel("t");
 title("Age");
 
 subplot(2,3,4) %
-axis([0 0.5 0 0.1]);
+axis([0 0.1 0 0.1]);
 hold on;
 % Add a title and tags
-xlabel("distant m");
+xlabel("t");
 ylabel("t");
 title("Aoi");
 
